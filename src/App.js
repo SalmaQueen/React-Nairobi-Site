@@ -7,6 +7,7 @@ import Motivation from './Components/Motivations/Motivation';
 import Main from './Components/Meetups/src/Main'
 import Navbarr from './Components/Navbar/Navbar';
 import Contact from './Components/Contact Us/Contact'
+import Footer from './Components/Footer/Footer'
 export default function App() {
   const [loading, setLoading] = useState(true)
 
@@ -24,6 +25,7 @@ export default function App() {
     <Content/>
     <Motivation/>
     <Contact/>
+    <Footer/>
       </>
    
       ): (

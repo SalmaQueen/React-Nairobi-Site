@@ -16,7 +16,7 @@
    
   }
   .wrap::before{
-    height: 800px;
+    height: 900px;
     width: 100%;
     position: absolute;
     content: "";
