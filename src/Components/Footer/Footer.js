@@ -1,48 +1,55 @@
 import React, { Component } from 'react'
 import './footer.css'
+import {Link} from 'react-router-dom'
 export default class Footer extends Component {
     render() {
         return (
             
-            <div className="footer-body">
-               
-                <footer class="footer">
-    <div class="waves">
-      <div class="wave" id="wave1"></div>
-      <div class="wave" id="wave2"></div>
-      <div class="wave" id="wave3"></div>
-      <div class="wave" id="wave4"></div>
-    </div>
-    <ul class="social-icon">
-      <li class="social-icon__item"><a class="social-icon__link" href="#">
+<footer className="page-footer font-small cyan darken-3 bg-display ">
+
+  <div className="container">
+
+    <div className="row">
+
+      <div className="col-md-12 py-5 ">
+        <div className="mb-0 flex-center">
+
+        <ul className="social-icon pt-5">
+      <li className="social-icon__item"><a className="social-icon__link" href="https://www.facebook.com/SalmaMohamedKenyan">
           <ion-icon name="logo-facebook"></ion-icon>
         </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="#">
+      <li className="social-icon__item"><a className="social-icon__link" href="https://twitter.com/SalmaKe_mohamed">
           <ion-icon name="logo-twitter"></ion-icon>
         </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="#">
+      <li className="social-icon__item"><a className="social-icon__link" href="https://www.linkedin.com/in/salma-mohamed-kenyan/">
           <ion-icon name="logo-linkedin"></ion-icon>
         </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="#">
+      <li className="social-icon__item"><a className="social-icon__link" href="https://www.instagram.com/salma_mohamed_ke/">
           <ion-icon name="logo-instagram"></ion-icon>
         </a></li>
     </ul>
-    <ul class="menu">
-      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+    <ul className="menu">
+      <li className="menu__item"><Link className="menu__link" href="/">Home</Link></li>
+      <li className="menu__item"><Link className="menu__link" href="#about">About</Link></li>
+      <li className="menu__item"><Link className="menu__link" href="#motivation">Motivation</Link></li>
+      <li className="menu__item"><Link className="menu__link" href="/meetup">Meetup</Link></li>
+      <li className="menu__item"><Link className="menu__link" href="#contact">Contact</Link></li>
 
     </ul>
-    <p>&copy;2021 Salma Mohamed | All Rights Reserved</p>
-  </footer>
-  
+       
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 
 
+</footer>
+               
                 
                
-       </div>    
         )
     }
 }

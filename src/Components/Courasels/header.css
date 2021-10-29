@@ -1,8 +1,8 @@
 .wrappers::before{
-    height:600px;
+    height:700px;
     width:100%;
     left: 0;
-    right: 0;
+   
     background-color: purple;
     mix-blend-mode: overlay;
     /* margin-top: 1rem; */
@@ -21,8 +21,8 @@ img{
     z-index: 1;
 
  
-    height:600px;
-    width:100vw !important;
+    height:700px;
+    width:100% !important;
    
 
 }

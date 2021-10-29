@@ -4,6 +4,7 @@
     padding-top: 48px;
 	padding-left: 2rem;
 	padding-right: 2rem;
+	margin-bottom: 10rem;
     color: white;
 	padding-bottom: 88px;
     // background-color: #32043d;
@@ -12,7 +13,7 @@
 	height: 800px;
 	background-image: url('../images/hero-top-illustration.svg');
 
-	background-repeat:repeat;
+	background-repeat:no-repeat;
 
 	.hero-left img{
 		width: 100%;
@@ -53,7 +54,7 @@
   }
   .content1 button{
 	  border-radius: 40px;
-	  background-color: #09010f;
+	  background-color: #77002e;
 	  color:white;
 	  font-size: 2rem;
 	  padding: 3%;

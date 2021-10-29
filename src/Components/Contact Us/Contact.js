@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import './contact.css'
 import '../Motivations/motivation.css'
+import Footer from '../Footer/Footer'
 export default class Contact extends Component {
     render() {
         return (
-            <div className="wrap">
+          <>
+            <div className="wrap " >
               <div className="form">
               <h1 className="h1-edit" style={{textAlign:"center",fontFamily:"  Poppins, sans-serif", fontWeight:"bold"}}>HIRE/ENQUIRE</h1>
                 <div className="edit-image">
@@ -24,13 +26,15 @@ export default class Contact extends Component {
         <textarea name="Message" id="message" rows="5" placeholder="Type your message here...."></textarea>
       </div>
       <div className="form-group">
-        <button type="submit" className="submit"><i className="far fa-paper-plane"></i>Send</button>
+        <button type="submit" className="submit"><h1>Send</h1></button>
       </div>
     </form>
 
               </div>
   
   </div>
+  <Footer/>
+  </>
         )
     }
 }

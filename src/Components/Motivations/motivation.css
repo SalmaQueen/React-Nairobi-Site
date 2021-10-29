@@ -1,7 +1,8 @@
 .motivations{
     width: 100%;
     height: 1200px;
-    background-color: #e3ccfa;
+    margin-bottom: 15rem;
+    /* background-color: #e3ccfa; */
    
 }
 @media only screen and (max-width: 600px) {

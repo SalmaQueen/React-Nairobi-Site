@@ -24,7 +24,7 @@ function MeetupItem(props){
         }
     }
     return(
-        <li className={classes.item}>
+        <li className={classes.item} >
            <UICard>
                 
            <div className={classes.image}>

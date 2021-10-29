@@ -1,37 +1,76 @@
-
 import React, {useState,useEffect} from 'react'
+import { Route, Switch} from 'react-router-dom'
+import Layout from './Components/Meetups/src/Components/Layout/Layout/Layout';
 import Header from './Components/Courasels/Header'
 import Content from './Components/Content';
-import Spinner from './Components/Spinner'
-import Motivation from './Components/Motivations/Motivation';
-import Main from './Components/Meetups/src/Main'
-import Navbarr from './Components/Navbar/Navbar';
-import Contact from './Components/Contact Us/Contact'
+import Contact from './Components/Contact Us/Contact';
 import Footer from './Components/Footer/Footer'
-export default function App() {
+// The Pages components
+import AllMeetupsPage from './Components/Meetups/src/pages/AllMeetups';
+import FavouritesPage from './Components/Meetups/src/pages/Favourites';
+import NewMeetupsPage from './Components/Meetups/src/pages/NewMeetups';
+// import Main from './Components/Main'
+import Motivation from './Components/Motivations/Motivation';
+import MainNavigation from './Components/Meetups/src/Components/Layout/MainNavigation';
+import Spinner from './Components/Spinner'
+
+
+function App() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 2000)
   }, [])
 
-  return (
+return(
+  <>
+  {loading === false ? (
     <>
-    {loading === false ? (
-      <>
-      {/* <Main/> */}
-      <Navbarr/>
-       <Header/>
-    <Content/>
-    <Motivation/>
-    <Contact/>
-    <Footer/>
-      </>
    
-      ): (
-        <Spinner />
-      )}
+   <MainNavigation/>
+      <Switch>
+        <Route path="/" exact={true}>
+          <Header/>
+
+          </Route>
+          <Route path="/About" exact={true} >
+          <Content/>
+          </Route>
+          <Route path="/motivation" >
+          <Motivation/>
+          </Route>
+
+          <Route path="/contact" >
+          <Contact/>
+          </Route>
+          <Route path='/meetup' >
+              <AllMeetupsPage />
+            
+          </Route>
+
+          <Route path='/new-meetup'>
+
+              <NewMeetupsPage />
+
+          </Route>
+
+          <Route path='/favourites'>
+
+              <FavouritesPage />
+
+          </Route>
+      </Switch>
       
+
     </>
-  )
+ 
+    ): (
+      <Spinner />
+    )}
+    
+  </>
+)
 }
+
+
+export default App;

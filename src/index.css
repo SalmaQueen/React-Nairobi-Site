@@ -1,1 +1,15 @@
 /* import 'bootstrap/dist/css/bootstrap.min.css'; */
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vh;
+    height: auto;
+   
+    overflow: auto;
+    background-image: url("./images/back.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    object-fit: contain;
+    background-size: cover;
+}

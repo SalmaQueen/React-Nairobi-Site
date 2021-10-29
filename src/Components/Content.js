@@ -3,10 +3,13 @@ import './Content.scss'
 import './Motivations/motivation.css'
 import designer from '../images/designer.svg'
 // import Card from './Card'
+import Footer from './Footer/Footer'
+
 export default class Content extends Component {
     render() {
         return (
-                    <div className="hero ">
+            <>
+                    <div className="hero" id="about" >
 
 <h1 style={{textAlign:"center",fontFamily:"  Poppins, sans-serif", fontWeight:"bold", fontSize:"3.5rem"}}>About us</h1>
                 <div className="edit-image">
@@ -19,9 +22,9 @@ export default class Content extends Component {
 
                         <div className="hero-right ">
                             <div className="content1">
-                            <h1 style={{paddingTop:"20px"}}>React Nairobi</h1>
-                            <p>It was established in 2020 back in the days when REactjs was a hot technology in the market</p>
-                            <p>It was established in 2020 back in the days when REactjs was a hot technology in the market</p>
+                            <h1 style={{paddingTop:"20px",color:"#191919", fontSize:"3rem",fontWeight:"bold"}}>React Nairobi</h1>
+                            <p>It was established in 2020 back in December, Main reason for establishing the group being that Reactjs is a very marketable technology. </p>
+                            <p>Also it's a hot technology, easy to learn and implement it.</p>
                             <button>Join the group</button>
                             </div>
                            
@@ -30,6 +33,8 @@ export default class Content extends Component {
 
 
             </div>
+            <Footer/>
+            </>
         )
     }
 }
